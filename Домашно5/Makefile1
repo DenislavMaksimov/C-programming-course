@@ -1,0 +1,7 @@
+all: help.exe
+
+help.exe: help.c
+gcc -o help.exe help.c
+
+clean:
+    rm -f *.o *.exe
