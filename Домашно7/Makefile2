@@ -1,0 +1,10 @@
+all: lights
+
+lights: lights.o
+	gcc -o lights lights.o
+
+lights.o: lights.c
+	gcc -c lights.c
+
+clean:
+	rm -f *.o lights
