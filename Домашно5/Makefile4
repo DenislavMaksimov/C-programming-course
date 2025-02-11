@@ -1,0 +1,19 @@
+all: help.out strlength.out strconcat.out strcompare.out
+
+help.out: help.c
+gcc -o help.out help.c
+
+strlength.out: strlength.c 
+gcc -o strlength.out strlength.c 
+
+strconcat.out: strconcat.c 
+gcc -o strconcat.out strconcat.c 
+
+strcompare.out: strcompare.c 
+gcc -o strcompare.out strcompare.c 
+
+mystrings.o: mystrings.c mystrings.h
+gcc -c mystrings.c
+
+clean:
+	rm -f *.o *.exe
