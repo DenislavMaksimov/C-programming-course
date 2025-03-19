@@ -61,10 +61,10 @@
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
-  "terminal.integrated.defaultProfile.windows": "Mingw64",
+  "terminal.integrated.defaultProfile.windows": "MSYS2",
   "terminal.integrated.profiles.windows": {
-    "Mingw64": {
-      "path": "C:\\msys64\\mingw64\\bin\\bash.exe"
+    "MSYS2": {
+      "path": "C:\\msys64\\usr\\bin\\bash.exe"
     }
   },
   "files.associations": {
