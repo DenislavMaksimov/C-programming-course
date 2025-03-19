@@ -12,6 +12,7 @@
       "environment": [],
       "externalConsole": true,
       "MIMode": "gdb",
+      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
       "setupCommands": [
         {
           "description": "Изчистване на настройките за GDB",
@@ -19,7 +20,6 @@
           "ignoreFailures": true
         }
       ],
-      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
       "preLaunchTask": "build C file",
       "miDebuggerArgs": "",
       "serverLaunchTimeout": 10000,
@@ -33,8 +33,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Програмиране/Домашно11",
-      "program": "c:/Програмиране/Домашно11/build/Debug/outDebug",
+      "cwd": "c:/Програмиране/Домашно10",
+      "program": "c:/Програмиране/Домашно10/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
       "setupCommands": [

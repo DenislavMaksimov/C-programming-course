@@ -13,7 +13,7 @@
       ],
       "group": {
         "kind": "build",
-        "isDefault": true
+        "isDefault": true   // Това трябва да е тук, за да стане тази задача основна
       },
       "problemMatcher": ["$gcc"],
       "detail": "Компилиране на C файл"
