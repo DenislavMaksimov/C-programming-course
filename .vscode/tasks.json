@@ -1,22 +1,23 @@
 {
-  "version": "2.0.0",
-  "tasks": [
+    "version": "2.0.0",
+    "tasks": [
       {
-          "label": "build program",
-          "type": "shell",
-          "command": "gcc",
-          "args": [
-              "-g",  // Добавяме флаг за дебъгване
-              "-o",
-              "${fileDirname}/${fileBasenameNoExtension}.exe",  // Генерираме изпълним файл с името на текущия .c файл
-              "${file}"  // Взимаме текущия .c файл
-          ],
-          "group": {
-              "kind": "build",
-              "isDefault": true
-          },
-          "problemMatcher": ["$gcc"],
-          "detail": "Generated task by Debugger."
+        "label": "build C file",
+        "type": "shell",
+        "command": "gcc",
+        "args": [
+          "-g",
+          "${file}",
+          "-o",
+          "${fileDirname}/${fileBasenameNoExtension}"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "Компилиране на C файл"
       }
-  ]
-}
+    ]
+  }
+  

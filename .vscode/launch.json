@@ -1,32 +1,49 @@
 {
-    "version": "0.2.0",
-    "configurations": [
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "setupCommands": [
         {
-            "name": "Debug C Program",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",  // Изпълнява .exe файл с името на текущия .c файл
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": true,  // Отваря външна конзола за програмата
-            "MIMode": "gdb",  // Използва GDB за дебъгване
-            "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",  // Пътят до gdb.exe, коригирай ако е различен
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "build program",  // Стартира компилация преди дебъгване
-            "miDebuggerArgs": "",
-            "logging": {
-                "engineLogging": true,
-                "trace": true,
-                "traceResponse": true
-            }
+          "description": "Изчистване на настройките за GDB",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
         }
-    ]
+      ],
+      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
+      "preLaunchTask": "build C file",
+      "miDebuggerArgs": "",
+      "serverLaunchTimeout": 10000,
+      "filterStdout": true,
+      "filterStderr": true
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Програмиране/Домашно11",
+      "program": "c:/Програмиране/Домашно11/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
 }
